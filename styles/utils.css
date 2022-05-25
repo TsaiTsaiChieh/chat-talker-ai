@@ -6,6 +6,7 @@ button {
     font-size: var(--size-x);
     border-radius: var(--size-l);
     cursor: pointer;
+    padding: 0;
 }
 
 button.red {
