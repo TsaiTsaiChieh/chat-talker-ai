@@ -1,0 +1,17 @@
+button {
+    border: none;
+    width: 128px;
+    height: 40px;
+    color: white;
+    font-size: var(--size-x);
+    border-radius: var(--size-l);
+    cursor: pointer;
+}
+
+button.red {
+    background: var(--red);
+}
+
+button.red:hover {
+    background: var(--dark-red);
+}
