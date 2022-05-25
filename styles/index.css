@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #56C4C5;
+    --second-color: #221E1F;
+    --red: #FF5D50;
+    --dark-red: #E4584E;
+    --desktop-width: 80%;
+    --mobile-width: 90%;
+    --size-xx: 14px;
+    --size-x: 16px;
+    --size-s: 18px;
+    --size-m: 20px;
+    --size-l: 22px;
+    --size-xl: 24px;
+    --size-xxl: 28px;
+    --size-bl: 32px;
+}
+
+body,
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-style: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
