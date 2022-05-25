@@ -1,6 +1,7 @@
 :root {
     --primary-color: #56C4C5;
-    --second-color: #221E1F;
+    --second-color: #FFD153;
+    --black-color: #221E1F;
     --red: #FF5D50;
     --dark-red: #E4584E;
     --desktop-width: 80%;
@@ -12,7 +13,7 @@
     --size-l: 22px;
     --size-xl: 24px;
     --size-xxl: 28px;
-    --size-bl: 32px;
+    --size-b: 32px;
 }
 
 body,
@@ -24,6 +25,20 @@ body,
 img {
     max-width: 100%;
     height: auto;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+p,
+span {
+    color: var(--black-color);
 }
 
 *,
