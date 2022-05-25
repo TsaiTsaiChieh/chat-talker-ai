@@ -1,0 +1,83 @@
+/* ---------------- Top ---------------- */
+
+.top {
+    top: 60vh;
+    right: 10%;
+    position: fixed;
+    z-index: 99;
+}
+
+
+/* ---------------- header ---------------- */
+
+header {
+    max-width: var(--desktop-width);
+    margin: 24px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 218.06px;
+    height: 40px;
+}
+
+
+/* ---------------- banner ---------------- */
+
+.banner {
+    max-width: var(--desktop-width);
+    display: flex;
+    flex-direction: row;
+    margin: 30px auto;
+    justify-content: space-between;
+}
+
+.banner .bg-home {
+    width: 62%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.banner .slogan-container {
+    width: 451px;
+    height: 219px;
+    text-align: left;
+    margin: auto 0;
+}
+
+.banner h1 {
+    font-size: var(--size-s);
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.banner h2 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.banner h3 {
+    font-size: var(--size-m);
+    margin-top: 16px;
+}
+
+.banner .person {
+    width: 48.7%;
+    height: 534px;
+    vertical-align: bottom;
+}
+
+.banner .ball {
+    position: absolute;
+    top: 589px;
+    left: -223px;
+}
+
+@media (max-width: 375px) {}
