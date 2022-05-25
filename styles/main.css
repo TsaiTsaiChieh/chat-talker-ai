@@ -1,4 +1,4 @@
-/* ---------------- Top ---------------- */
+/* ---------------- top ---------------- */
 
 .top {
     top: 60vh;
@@ -8,11 +8,22 @@
 }
 
 
+/* ---------------- ball ---------------- */
+
+.ball {
+    position: absolute;
+    top: 589px;
+    left: -223px;
+    z-index: -1;
+}
+
+
 /* ---------------- header ---------------- */
 
 header {
-    max-width: var(--desktop-width);
-    margin: 24px auto;
+    width: 100%;
+    padding: 24px 10%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -60,7 +71,6 @@ header img {
 .banner h2 {
     font-size: 48px;
     font-weight: bold;
-    line-height: 1.5;
 }
 
 .banner h3 {
@@ -71,13 +81,66 @@ header img {
 .banner .person {
     width: 48.7%;
     height: 534px;
-    vertical-align: bottom;
 }
 
-.banner .ball {
-    position: absolute;
-    top: 589px;
-    left: -223px;
+.banner .bg-home-sm {
+    display: none;
 }
 
-@media (max-width: 375px) {}
+@media (max-width: 767px) {
+    /* ---------------- top ---------------- */
+    .top {
+        top: 73vh;
+        width: 50px;
+        height: 50px;
+        right: 5%;
+    }
+    /* ---------------- ball ---------------- */
+    .ball {
+        height: 126px;
+        top: 739px;
+        left: -77px;
+    }
+    /* ---------------- header ---------------- */
+    header {
+        padding: 24px 5%;
+        border-bottom: 2px solid var(--second-color);
+    }
+    header img {
+        width: 130.84px;
+        height: 24px;
+    }
+    /* ---------------- banner ---------------- */
+    .banner {
+        max-width: var(--mobile-width);
+        flex-direction: column;
+        position: relative;
+    }
+    .banner .bg-home {
+        display: none;
+    }
+    .banner .slogan-container {
+        width: 100%;
+        height: auto;
+    }
+    .banner h1,
+    h3 {
+        font-size: var(--size-x);
+    }
+    .banner h2 {
+        font-size: var(--size-b);
+    }
+    .banner .person {
+        width: 90%;
+        height: 305.5px;
+        margin: auto;
+        margin-top: 32px;
+    }
+    .banner .bg-home-sm {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        margin-top: 32px;
+    }
+}
