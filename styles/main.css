@@ -205,7 +205,7 @@ header img {
         height: 50px;
         right: 5%;
     }
-    /* ---------------- ball01 ---------------- */
+    /* ---------------- ball ---------------- */
     .ball01 {
         height: 126px;
         top: 739px;
@@ -213,7 +213,7 @@ header img {
     }
     .ball02 {
         width: 135px;
-        top: 1694px;
+        top: 3075px;
         right: -47px;
     }
     /* ---------------- header ---------------- */
@@ -292,6 +292,7 @@ header img {
     .char-container {
         width: var(--mobile-width);
         margin: 60px auto;
+        position: relative;
     }
     .char-container h3 {
         font-size: var(--size-xxl);
