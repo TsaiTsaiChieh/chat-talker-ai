@@ -189,4 +189,33 @@ header img {
         top: 50%;
         margin-top: 32px;
     }
+    /* ---------------- platform-container ---------------- */
+    .platform-container {
+        max-width: var(--mobile-width);
+        margin: 92px auto 36px;
+    }
+    .platform-container h3 {
+        font-size: var(--size-xxl);
+        margin-bottom: 32px;
+    }
+    .platform-container .platforms {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .platforms .item {
+        display: flex;
+        width: 228;
+        height: 166px;
+        margin-bottom: 24px;
+    }
+    .platforms .item img {
+        width: 60px;
+        height: 60px;
+    }
+    .platforms .item h4 {
+        font-size: var(--size-s);
+        margin: 16px 0;
+    }
 }
