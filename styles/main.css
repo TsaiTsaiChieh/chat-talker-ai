@@ -88,6 +88,51 @@ header img {
     display: none;
 }
 
+
+/* ---------------- platform-container ---------------- */
+
+.platform-container {
+    max-width: var(--desktop-width);
+    margin: 217px auto 100px;
+    text-align: center;
+}
+
+.platform-container h3 {
+    font-size: var(--size-b);
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+
+.platform-container .platforms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.platforms .item {
+    display: flex;
+    width: 244px;
+    height: 221px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.platforms .item img {
+    width: 90px;
+    height: 90px;
+}
+
+.platforms .item h4 {
+    font-size: var(--size-xl);
+    font-weight: bold;
+    margin: 24px 0;
+}
+
+.platforms .item p {
+    color: var(--gray-color);
+    font-size: var(--size-x);
+}
+
 @media (max-width: 767px) {
     /* ---------------- top ---------------- */
     .top {
