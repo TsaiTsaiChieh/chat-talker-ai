@@ -16,3 +16,11 @@ button.red {
 button.red:hover {
     background: var(--dark-red);
 }
+
+button.green {
+    background: var(--primary-color);
+}
+
+button.green:hover {
+    background: var(--primary-dark-color);
+}
