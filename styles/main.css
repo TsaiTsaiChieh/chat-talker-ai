@@ -1,3 +1,11 @@
+/* ---------------- content ---------------- */
+
+.content {
+    max-width: var(--desktop-width);
+    margin: auto;
+}
+
+
 /* ---------------- top ---------------- */
 
 .top {
@@ -48,7 +56,6 @@ header img {
 /* ---------------- banner ---------------- */
 
 .banner {
-    max-width: var(--desktop-width);
     display: flex;
     flex-direction: row;
     margin: 30px auto 217px;
@@ -100,7 +107,6 @@ header img {
 /* ---------------- platform-container ---------------- */
 
 .platform-container {
-    max-width: var(--desktop-width);
     margin: 0 auto 100px;
     text-align: center;
 }
@@ -148,7 +154,6 @@ header img {
 /* ---------------- char-container ---------------- */
 
 .char-container {
-    width: var(--desktop-width);
     display: flex;
     flex-direction: column;
     margin: 100px auto;
@@ -198,6 +203,11 @@ header img {
 }
 
 @media (max-width: 767px) {
+    /* ---------------- content ---------------- */
+    .content {
+        max-width: var(--mobile-width);
+        margin: auto;
+    }
     /* ---------------- top ---------------- */
     .top {
         top: 80vh;
@@ -227,7 +237,6 @@ header img {
     }
     /* ---------------- banner ---------------- */
     .banner {
-        max-width: var(--mobile-width);
         flex-direction: column;
         position: relative;
     }
@@ -260,7 +269,6 @@ header img {
     }
     /* ---------------- platform-container ---------------- */
     .platform-container {
-        max-width: var(--mobile-width);
         margin: 92px auto 36px;
     }
     .platform-container h3 {
@@ -290,7 +298,6 @@ header img {
     }
     /* ---------------- char-container ---------------- */
     .char-container {
-        width: var(--mobile-width);
         margin: 60px auto;
         position: relative;
     }
