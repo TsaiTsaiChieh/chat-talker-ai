@@ -2,6 +2,7 @@
     --primary-color: #56C4C5;
     --second-color: #FFD153;
     --black-color: #221E1F;
+    --gray-color: #747474;
     --red: #FF5D50;
     --dark-red: #E4584E;
     --desktop-width: 80%;
@@ -29,15 +30,11 @@ img {
 
 h1,
 h2,
-h3 {
-    line-height: 1.5;
-}
-
-h1,
-h2,
 h3,
+h4,
 p,
 span {
+    line-height: 1.5;
     color: var(--black-color);
 }
 
