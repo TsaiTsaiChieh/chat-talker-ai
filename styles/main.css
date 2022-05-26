@@ -18,14 +18,6 @@
     z-index: -1;
 }
 
-.ball02 {
-    width: 310px;
-    position: absolute;
-    z-index: -1;
-    top: 1694px;
-    right: -100px;
-}
-
 
 /* ---------------- header ---------------- */
 
@@ -145,10 +137,20 @@ header img {
 }
 
 
+/* ---------------- ball-wrap ---------------- */
+
+.ball-wrap {
+    background-size: 310px;
+    background-image: url("../public/ball02.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 0 right -100px;
+}
+
+
 /* ---------------- char-container ---------------- */
 
 .char-container {
-    width: var(--desktop-width);
+    max-width: var(--desktop-width);
     display: flex;
     flex-direction: column;
     margin: 100px auto;
@@ -210,11 +212,6 @@ header img {
         height: 126px;
         top: 739px;
         left: -77px;
-    }
-    .ball02 {
-        width: 135px;
-        top: 3075px;
-        right: -47px;
     }
     /* ---------------- header ---------------- */
     header {
@@ -288,9 +285,14 @@ header img {
         font-size: var(--size-s);
         margin: 16px 0;
     }
+    /* ---------------- ball-wrap ---------------- */
+    .ball-wrap {
+        background-size: 135px;
+        background-position: bottom 10px right -47px;
+    }
     /* ---------------- char-container ---------------- */
     .char-container {
-        width: var(--mobile-width);
+        max-width: var(--mobile-width);
         margin: 60px auto;
         position: relative;
     }
