@@ -5,6 +5,9 @@
     position: fixed;
     z-index: 99;
     cursor: pointer;
+    @include pad {
+        right: 7.5%;
+    }
     @include mobile {
         top: 80vh;
         width: 50px;
@@ -270,6 +273,95 @@
             .item {
                 width: 80%;
                 padding: 2rem;
+            }
+        }
+    }
+}
+
+// ----------------------- comment ----------------------- //
+.comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+    position: relative;
+    .ball03 {
+        width: 150px;
+        position: absolute;
+        z-index: -1;
+        left: -70px;
+        top: 40px;
+    }
+    h3 {
+        margin-bottom: 104px;
+    }
+    .comment-wrap {
+        display: flex;
+        gap: 16px;
+        .item {
+            display: flex;
+            flex-direction: column;
+            background: $color-white;
+            width: 33.3%;
+            position: relative;
+            border-radius: 12px;
+            padding: 48px 32px 24px;
+            p {
+                height: 4.5rem;
+            }
+            img.avatar {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                position: absolute;
+                left: 32px;
+                top: -56px;
+            }
+            .line {
+                width: 100%;
+                border-bottom: 1px solid #DDDDDD;
+                margin: 24px 0;
+            }
+            .company {
+                margin-bottom: 8px;
+            }
+            .name-wrap {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .star-wrap {
+                    img {
+                        width: 16.78px;
+                        height: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .comment-page {
+        display: flex;
+        margin-top: 24px;
+        gap: 8px;
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50px;
+            background: #DDDDDD;
+        }
+        .active {
+            width: 16px;
+            background: $color-second;
+        }
+    }
+    @include pad {
+        .comment-wrap {
+            gap: 100px;
+            flex-direction: column;
+            .item {
+                width: 100%;
+                p {
+                    height: 3.8rem;
+                }
             }
         }
     }
