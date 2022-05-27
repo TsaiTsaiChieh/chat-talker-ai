@@ -318,6 +318,16 @@ header img {
   }
 }
 
+.footer {
+  background: #F5F5F5;
+  height: 56px;
+  text-align: center;
+}
+
+.footer p {
+  line-height: 56px;
+}
+
 .top {
   top: 60vh;
   right: 10%;
