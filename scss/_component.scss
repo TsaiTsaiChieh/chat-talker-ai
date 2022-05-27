@@ -1,0 +1,23 @@
+.btn {
+    border: none;
+    width: 136px;
+    height: 49px;
+    color: $color-white;
+    background: $color-primary;
+    cursor: pointer;
+    border-radius: 27px;
+    font-size: $size-s;
+    &:hover {
+        background: darken($color-primary, 20%);
+    }
+}
+
+.btn-red {
+    width: 128px;
+    height: 40px;
+    font-size: $size-x;
+    background: $color-red;
+    &:hover {
+        background: darken($color-red, 20%);
+    }
+}

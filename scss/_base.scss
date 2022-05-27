@@ -1,0 +1,97 @@
+body,
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-style: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    line-height: 1.5;
+    color: $color-black;
+    font-size: $size-xx;
+}
+
+h1 {
+    font-size: $size-s;
+    @include mobile {
+        font-size: $size-xx;
+    }
+}
+
+h2 {
+    font-size: 48px;
+    @include mobile {
+        font-size: $size-b;
+    }
+}
+
+h3 {
+    font-size: $size-b;
+    font-weight: bold;
+    @include mobile {
+        font-size: $size-xxl;
+    }
+}
+
+h4 {
+    font-size: $size-xl;
+    @include mobile {
+        font-size: $size-s;
+    }
+}
+
+h5 {
+    font-size: $size-m;
+    @include mobile {
+        font-size: $size-x;
+    }
+}
+
+h6 {
+    font-size: $size-s;
+    @include mobile {
+        font-size: $size-x;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.main-color {
+    color: $color-primary;
+}
+
+.container {
+    max-width: 1440px;
+    width: 90%;
+    @include pad {
+        max-width: 820px;
+        width: 85%;
+    }
+    @include mobile {
+        max-width: 767px;
+        width: 80%;
+    }
+}
+
+.box-shadow {
+    box-shadow: 0px 2px 10px #00000014;
+}

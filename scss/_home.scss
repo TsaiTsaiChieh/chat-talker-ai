@@ -1,0 +1,276 @@
+// ----------------------- top ----------------------- //
+.top {
+    top: 60vh;
+    right: 10%;
+    position: fixed;
+    z-index: 99;
+    cursor: pointer;
+    @include mobile {
+        top: 80vh;
+        width: 50px;
+        height: 50px;
+        right: 5%;
+    }
+}
+
+// ----------------------- ball ----------------------- //
+.ball01 {
+    position: absolute;
+    top: 589px;
+    left: -223px;
+    z-index: -1;
+    @include mobile {
+        height: 126px;
+        top: 739px;
+        left: -77px;
+    }
+}
+
+// ----------------------- banner ----------------------- //
+.banner {
+    display: flex;
+    flex-direction: row;
+    margin: 30px auto 180px;
+    justify-content: space-between;
+    .bg-home {
+        width: 62%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .slogan-container {
+        width: 451px;
+        height: 219px;
+        text-align: left;
+        margin: auto 0;
+    }
+    h2 {
+        margin: 8px 0 16px;
+    }
+    .person {
+        width: 48.7%;
+        height: 534px;
+    }
+    .bg-home-sm {
+        display: none;
+    }
+    @include mobile {
+        flex-direction: column;
+        position: relative;
+        .bg-home {
+            display: none;
+        }
+        .slogan-container {
+            width: 100%;
+            height: auto;
+        }
+        .person {
+            width: 90%;
+            height: 305.5px;
+            margin: auto;
+            margin-top: 32px;
+        }
+        .bg-home-sm {
+            display: block;
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            margin-top: 32px;
+        }
+    }
+}
+
+// ----------------------- platform ----------------------- //
+.platform {
+    margin: 0 auto 100px;
+    text-align: center;
+    h3 {
+        margin-bottom: 48px;
+    }
+    .platform-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .item {
+            display: flex;
+            width: 33.3%;
+            flex-direction: column;
+            align-items: center;
+            &:nth-child(2) {
+                margin: 0 126px;
+            }
+            img {
+                width: 90px;
+                height: 90px;
+            }
+            h4 {
+                margin: 24px 0;
+            }
+            p {
+                color: $color-gray;
+            }
+        }
+    }
+    @include mobile {
+        margin: 92px auto 36px;
+        h3 {
+            margin-bottom: 32px;
+        }
+        .platform-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            .item {
+                display: flex;
+                width: 70%;
+                &:nth-child(2) {
+                    margin: 24px 0;
+                }
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+                h4 {
+                    margin: 16px 0;
+                }
+            }
+        }
+    }
+}
+
+// ----------------------- ball-wrap ----------------------- //
+.ball-wrap {
+    background-size: 310px;
+    background-image: url("../public/ball02.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 55% right -100px;
+    @include mobile {
+        background-size: 135px;
+        background-position: bottom 45% right -47px;
+    }
+}
+
+// ----------------------- character ----------------------- //
+.character {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    text-align: center;
+    h5 {
+        margin: 16px auto 48px;
+    }
+    .char-wrap {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 16px;
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            align-items: center;
+            box-shadow: 0px 2px 10px #00000014;
+            border-radius: 12px;
+            background: white;
+            img {
+                border-radius: 12px 12px 0 0;
+            }
+            span {
+                color: $color-primary;
+                font-weight: bold;
+                margin-top: 16px;
+            }
+            p {
+                margin: 16px 16px 24px;
+            }
+        }
+    }
+    @include mobile {
+        margin: 60px auto;
+        position: relative;
+        h5 {
+            margin: 16px auto 32px;
+        }
+        .char-wrap {
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            .card {
+                display: flex;
+                flex-direction: column;
+                width: 85%;
+            }
+        }
+    }
+}
+
+// ----------------------- feature ----------------------- //
+.feature {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    gap: 137px;
+    .feature-wrap {
+        width: 50%;
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(2, auto);
+        row-gap: 28px;
+        column-gap: 47px;
+        .item {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            .circle {
+                display: flex;
+                width: 86px;
+                height: 86px;
+                border-radius: 50%;
+                img {
+                    margin: auto;
+                }
+            }
+            h6 {
+                font-weight: bold;
+                margin: 24px 0 16px;
+            }
+            p {
+                width: 166px;
+            }
+        }
+    }
+    .details {
+        width: 50%;
+        h6 {
+            margin: 16px 0 24px;
+        }
+    }
+    @include pad {
+        flex-direction: column-reverse;
+        gap: 100px;
+        .feature-wrap {
+            width: 100%;
+            .item {
+                padding: 1.5rem;
+            }
+        }
+        .details {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    @include mobile {
+        gap: 32px;
+        .feature-wrap {
+            grid-template-rows: repeat(1, auto);
+            grid-template-columns: repeat(1, auto);
+            row-gap: 24px;
+            justify-items: center;
+            .item {
+                width: 80%;
+                padding: 2rem;
+            }
+        }
+    }
+}

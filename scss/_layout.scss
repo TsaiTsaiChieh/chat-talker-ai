@@ -1,0 +1,21 @@
+header {
+    width: 100%;
+    padding: 24px 10%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        width: 218.06px;
+        height: 40px;
+    }
+    @include mobile {
+        padding: 24px 5%;
+        border-bottom: 2px solid $color-second;
+        img {
+            width: 130.84px;
+            height: 24px;
+        }
+    }
+}
