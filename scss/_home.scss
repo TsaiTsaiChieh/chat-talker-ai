@@ -364,5 +364,11 @@
                 }
             }
         }
+        @include mobile {
+            margin: 60px auto;
+            h3 {
+                margin-bottom: 88px;
+            }
+        }
     }
 }
