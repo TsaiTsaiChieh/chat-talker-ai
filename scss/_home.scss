@@ -392,7 +392,7 @@
     h3 {
         margin: 20% auto 48px;
     }
-    button {
+    .btn {
         margin-bottom: 112px;
     }
     @include pad {
@@ -411,7 +411,7 @@
         h3 {
             margin: 80% auto 24px;
         }
-        button {
+        .btn {
             margin-bottom: 60px;
         }
     }
