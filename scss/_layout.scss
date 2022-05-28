@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    padding: 24px 10%;
+    padding: 24px 5%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -11,7 +11,7 @@ header {
         height: 40px;
     }
     @include mobile {
-        padding: 24px 5%;
+        padding: 24px 2.5%;
         border-bottom: 2px solid $color-second;
         img {
             width: 130.84px;
