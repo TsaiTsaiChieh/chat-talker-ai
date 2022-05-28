@@ -26,3 +26,24 @@
         background: darken($color-red, 20%);
     }
 }
+
+.btn-price {
+    width: 144px;
+    height: 50px;
+    font-size: $size-s;
+    border: 1px solid $color-primary;
+    border-radius: 27px;
+    background: $color-white;
+    color: $color-primary;
+    &:hover,
+    &.active {
+        background: $color-primary;
+        color: $color-white;
+    }
+}
+
+.line {
+    width: 100%;
+    color: #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+}
