@@ -8,16 +8,26 @@
     position: absolute;
     top: 0;
     z-index: -1;
+    @include mobile {
+        background-image: url('../public/banner_sm.svg');
+        top: 90px;
+        background-size: contain;
+    }
 }
 
 .gray-bg {
     background-color: #F7F9FD;
-    border-radius: 0 0 0 250px;
+    border-radius: 0 0 0 300px;
     width: 100%;
     height: 470px;
     z-index: -99;
     top: 0;
     position: absolute;
+    @include mobile {
+        height: 495px;
+        top: 90px;
+        border-radius: 0 0 0 50%;
+    }
 }
 
 // ----------------------- direction ----------------------- //
@@ -28,5 +38,8 @@
     h2 {
         font-weight: bold;
         margin-bottom: 16px;
+    }
+    @include mobile {
+        margin: 48px auto 100%;
     }
 }
