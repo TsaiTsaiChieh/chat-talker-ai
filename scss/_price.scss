@@ -43,3 +43,97 @@
         margin: 48px auto 100%;
     }
 }
+
+// ----------------------- project ----------------------- //
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 94px;
+    .btn-wrap {
+        display: flex;
+        gap: 16px;
+        margin: 48px auto 64px;
+    }
+    .plan-wrap {
+        display: flex;
+        gap: 21px;
+        text-align: center;
+        .plan {
+            border-radius: 12px;
+            padding-bottom: 38px;
+            &:hover {
+                background: lighten($color-primary, 42%);
+            }
+            h4 {
+                padding: 10px 17.5px;
+            }
+            p {
+                padding: 32px 0;
+            }
+            .calc-wrap {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 21px;
+                padding-left: 30px;
+                padding-right: 30px;
+                .equal {
+                    font-size: 32px;
+                }
+                .user,
+                .month-price {
+                    width: 170px;
+                    height: 108px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    border-radius: 12px;
+                    background: #F5F5F5;
+                }
+                .user {
+                    .user-title {
+                        font-size: 12px;
+                    }
+                    .user-count {
+                        color: $color-primary;
+                        font-size: $size-b;
+                        &::after {
+                            content: '位';
+                            font-size: 12px;
+                            margin-left: 8px;
+                        }
+                    }
+                }
+                .month-price {
+                    .price-title {
+                        font-size: 12px;
+                    }
+                    .price-count {
+                        font-size: $size-b;
+                        &::after {
+                            content: 'TWD';
+                            font-size: 12px;
+                            margin-left: 8px;
+                        }
+                    }
+                }
+            }
+            .feat-wrap {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                padding: 32px 0 42px 30px;
+                gap: 16px;
+                .feat {
+                    &::before {
+                        width: 20px;
+                        height: 16px;
+                        margin-right: 13px;
+                        content: url("../public/icon_check.svg");
+                    }
+                }
+            }
+        }
+    }
+}

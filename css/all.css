@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -287,6 +288,27 @@ h6 {
 
 .btn-red:hover {
   background: #e91100;
+}
+
+.btn-price {
+  width: 144px;
+  height: 50px;
+  font-size: 18px;
+  border: 1px solid #56C4C5;
+  border-radius: 27px;
+  background: #FFFFFF;
+  color: #56C4C5;
+}
+
+.btn-price:hover, .btn-price.active {
+  background: #56C4C5;
+  color: #FFFFFF;
+}
+
+.line {
+  width: 100%;
+  color: #DDDDDD;
+  border-top: 1px solid #DDDDDD;
 }
 
 header {
@@ -787,7 +809,9 @@ header img {
 }
 
 .comment .comment-wrap .item p {
-  height: 60%;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
 }
 
 .comment .comment-wrap .item img.avatar {
@@ -799,21 +823,22 @@ header img {
   top: -56px;
 }
 
-.comment .comment-wrap .item hr {
-  width: 100%;
-  height: 10%;
-  height: 1px;
-  border-width: 0;
-  background: #DDDDDD;
-  margin: 12px auto;
+.comment .comment-wrap .item .line {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
 .comment .comment-wrap .item .company {
-  height: 15%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .comment .comment-wrap .item .name-wrap {
-  height: 15%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -862,9 +887,6 @@ header img {
     width: 100%;
     height: 200px;
   }
-  .comment .comment-wrap .item .company {
-    margin-bottom: 8px;
-  }
 }
 
 @media (max-width: 768px) and (max-width: 576px) {
@@ -873,9 +895,6 @@ header img {
   }
   .comment .comment-wrap .item {
     height: 248px;
-  }
-  .comment .comment-wrap .item .company {
-    margin-bottom: 0;
   }
   .comment h3 {
     margin-bottom: 88px;
@@ -999,5 +1018,138 @@ header img {
   .direction {
     margin: 48px auto 100%;
   }
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 94px;
+}
+
+.project .btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  margin: 48px auto 64px;
+}
+
+.project .plan-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 21px;
+  text-align: center;
+}
+
+.project .plan-wrap .plan {
+  border-radius: 12px;
+  padding-bottom: 38px;
+}
+
+.project .plan-wrap .plan:hover {
+  background: #f5fcfc;
+}
+
+.project .plan-wrap .plan h4 {
+  padding: 10px 17.5px;
+}
+
+.project .plan-wrap .plan p {
+  padding: 32px 0;
+}
+
+.project .plan-wrap .plan .calc-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 21px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.project .plan-wrap .plan .calc-wrap .equal {
+  font-size: 32px;
+}
+
+.project .plan-wrap .plan .calc-wrap .user,
+.project .plan-wrap .plan .calc-wrap .month-price {
+  width: 170px;
+  height: 108px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 12px;
+  background: #F5F5F5;
+}
+
+.project .plan-wrap .plan .calc-wrap .user .user-title {
+  font-size: 12px;
+}
+
+.project .plan-wrap .plan .calc-wrap .user .user-count {
+  color: #56C4C5;
+  font-size: 32px;
+}
+
+.project .plan-wrap .plan .calc-wrap .user .user-count::after {
+  content: '位';
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.project .plan-wrap .plan .calc-wrap .month-price .price-title {
+  font-size: 12px;
+}
+
+.project .plan-wrap .plan .calc-wrap .month-price .price-count {
+  font-size: 32px;
+}
+
+.project .plan-wrap .plan .calc-wrap .month-price .price-count::after {
+  content: 'TWD';
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.project .plan-wrap .plan .feat-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding: 32px 0 42px 30px;
+  gap: 16px;
+}
+
+.project .plan-wrap .plan .feat-wrap .feat::before {
+  width: 20px;
+  height: 16px;
+  margin-right: 13px;
+  content: url("../public/icon_check.svg");
 }
 /*# sourceMappingURL=all.css.map */
