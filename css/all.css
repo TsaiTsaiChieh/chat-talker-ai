@@ -263,6 +263,22 @@ ul {
   color: #221E1F;
 }
 
+.top {
+  top: 60vh;
+  right: 5%;
+  position: fixed;
+  z-index: 99;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .top {
+    top: 80vh;
+    width: 50px;
+    height: 50px;
+  }
+}
+
 .btn {
   display: inline-block;
   border: none;
@@ -373,29 +389,6 @@ header img {
 
 .footer p {
   line-height: 56px;
-}
-
-.top {
-  top: 60vh;
-  right: 10%;
-  position: fixed;
-  z-index: 99;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .top {
-    right: 7.5%;
-  }
-}
-
-@media (max-width: 576px) {
-  .top {
-    top: 80vh;
-    width: 50px;
-    height: 50px;
-    right: 5%;
-  }
 }
 
 .ball01 {
@@ -1248,6 +1241,103 @@ header img {
     width: 16px;
     height: 14px;
     margin-right: 16px;
+  }
+}
+
+.question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  margin-bottom: 100px;
+}
+
+.question h3 {
+  margin-bottom: 48px;
+}
+
+.question .question-wrap {
+  width: 870px;
+  text-align: left;
+  border-radius: 12px;
+  position: relative;
+}
+
+.question .question-wrap .problem {
+  font-size: 18px;
+  padding: 16px 0 16px 32px;
+}
+
+.question .question-wrap .toggle-btn {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 19px;
+  right: 32px;
+  content: url("../public/icon_plus.svg");
+  cursor: pointer;
+}
+
+.question .question-wrap .ans {
+  font-size: 16px;
+  padding: 8px 0 16px 32px;
+  line-height: 2;
+}
+
+.question .question-wrap.active .problem {
+  font-weight: bold;
+  color: #56C4C5;
+}
+
+.question .question-wrap.active .toggle-btn {
+  content: url("../public/icon_minus.svg");
+}
+
+.question .question-wrap.active .ans {
+  color: #747474;
+}
+
+@media (max-width: 768px) {
+  .question {
+    gap: 32px;
+  }
+  .question .question-wrap {
+    width: 650px;
+  }
+}
+
+@media (max-width: 576px) {
+  .question {
+    gap: 16px;
+    margin-bottom: 60px;
+  }
+  .question h3 {
+    margin-bottom: 32px;
+  }
+  .question .question-wrap {
+    width: 334px;
+  }
+  .question .question-wrap .problem {
+    font-size: 16px;
+    padding: 16px 0 16px 16px;
+  }
+  .question .question-wrap .toggle-btn {
+    width: 16px;
+    height: 16px;
+    top: 20px;
+    right: 16px;
+  }
+  .question .question-wrap .ans {
+    font-size: 16px;
+    padding: 0 0 16px 16px;
   }
 }
 /*# sourceMappingURL=all.css.map */
