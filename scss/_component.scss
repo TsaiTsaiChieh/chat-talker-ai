@@ -40,6 +40,15 @@
         background: $color-primary;
         color: $color-white;
     }
+    @include pad {
+        width: 120px;
+        height: 45px;
+    }
+    @include mobile {
+        width: 100px;
+        height: 40px;
+        font-size: $size-x;
+    }
 }
 
 .line {

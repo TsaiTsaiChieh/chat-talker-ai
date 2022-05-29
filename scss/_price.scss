@@ -16,7 +16,7 @@
 }
 
 .gray-bg {
-    background-color: #F7F9FD;
+    background-color: $color-gray-300;
     border-radius: 0 0 0 300px;
     width: 100%;
     height: 470px;
@@ -50,10 +50,13 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 94px;
+    text-align: center;
     .btn-wrap {
         display: flex;
         gap: 16px;
         margin: 48px auto 64px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .plan-wrap {
         display: flex;
@@ -67,6 +70,7 @@
             }
             h4 {
                 padding: 10px 17.5px;
+                font-weight: bold;
             }
             p {
                 padding: 32px 0;
@@ -89,7 +93,7 @@
                     flex-direction: column;
                     justify-content: center;
                     border-radius: 12px;
-                    background: #F5F5F5;
+                    background: $color-gray-100;
                 }
                 .user {
                     .user-title {
@@ -125,12 +129,83 @@
                 text-align: left;
                 padding: 32px 0 42px 30px;
                 gap: 16px;
+                font-size: $size-x;
                 .feat {
                     &::before {
+                        display: inline-block;
                         width: 20px;
                         height: 16px;
                         margin-right: 13px;
                         content: url("../public/icon_check.svg");
+                    }
+                }
+            }
+        }
+    }
+    @include pad {
+        .btn-wrap {
+            gap: 10px;
+        }
+        .plan-wrap {
+            flex-direction: column;
+        }
+    }
+    @include mobile {
+        margin-bottom: 60px;
+        .btn-wrap {
+            gap: 6px;
+        }
+        .plan-wrap {
+            gap: 24px;
+            .plan {
+                padding-bottom: 24px;
+                h4 {
+                    font-size: $size-xl;
+                    padding: 16;
+                }
+                p {
+                    padding: 24px 0;
+                }
+                .calc-wrap {
+                    gap: 6px;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                    .equal {
+                        font-size: 24px;
+                    }
+                    .user,
+                    .month-price {
+                        width: 140px;
+                        height: 90px;
+                        background: $color-gray-100;
+                    }
+                    .user {
+                        .user-count {
+                            font-size: $size-xxl;
+                            &::after {
+                                font-size: 12px;
+                                margin-left: 4px;
+                            }
+                        }
+                    }
+                    .month-price {
+                        .price-count {
+                            font-size: $size-b;
+                            &::after {
+                                margin-left: 4px;
+                            }
+                        }
+                    }
+                }
+                .feat-wrap {
+                    padding: 27px 0 35px 16px;
+                    font-size: $size-xx;
+                    .feat {
+                        &::before {
+                            width: 16px;
+                            height: 14px;
+                            margin-right: 16px;
+                        }
                     }
                 }
             }

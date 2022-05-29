@@ -259,6 +259,10 @@ h6 {
           box-shadow: 0px 2px 10px #00000014;
 }
 
+ul {
+  color: #221E1F;
+}
+
 .btn {
   display: inline-block;
   border: none;
@@ -303,6 +307,21 @@ h6 {
 .btn-price:hover, .btn-price.active {
   background: #56C4C5;
   color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .btn-price {
+    width: 120px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-price {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+  }
 }
 
 .line {
@@ -613,7 +632,7 @@ header img {
   -webkit-box-shadow: 0px 2px 10px #00000014;
           box-shadow: 0px 2px 10px #00000014;
   border-radius: 12px;
-  background: white;
+  background: #FFFFFF;
 }
 
 .character .char-wrap .card img {
@@ -685,7 +704,7 @@ header img {
 }
 
 .feature .feature-wrap .item {
-  background: white;
+  background: #FFFFFF;
   border-radius: 12px;
   padding: 2rem;
 }
@@ -1032,6 +1051,7 @@ header img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 94px;
+  text-align: center;
 }
 
 .project .btn-wrap {
@@ -1040,6 +1060,11 @@ header img {
   display: flex;
   gap: 16px;
   margin: 48px auto 64px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .project .plan-wrap {
@@ -1061,6 +1086,7 @@ header img {
 
 .project .plan-wrap .plan h4 {
   padding: 10px 17.5px;
+  font-weight: bold;
 }
 
 .project .plan-wrap .plan p {
@@ -1144,12 +1170,84 @@ header img {
   text-align: left;
   padding: 32px 0 42px 30px;
   gap: 16px;
+  font-size: 16px;
 }
 
 .project .plan-wrap .plan .feat-wrap .feat::before {
+  display: inline-block;
   width: 20px;
   height: 16px;
   margin-right: 13px;
   content: url("../public/icon_check.svg");
+}
+
+@media (max-width: 768px) {
+  .project .btn-wrap {
+    gap: 10px;
+  }
+  .project .plan-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .project {
+    margin-bottom: 60px;
+  }
+  .project .btn-wrap {
+    gap: 6px;
+  }
+  .project .plan-wrap {
+    gap: 24px;
+  }
+  .project .plan-wrap .plan {
+    padding-bottom: 24px;
+  }
+  .project .plan-wrap .plan h4 {
+    font-size: 24px;
+    padding: 16;
+  }
+  .project .plan-wrap .plan p {
+    padding: 24px 0;
+  }
+  .project .plan-wrap .plan .calc-wrap {
+    gap: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .project .plan-wrap .plan .calc-wrap .equal {
+    font-size: 24px;
+  }
+  .project .plan-wrap .plan .calc-wrap .user,
+  .project .plan-wrap .plan .calc-wrap .month-price {
+    width: 140px;
+    height: 90px;
+    background: #F5F5F5;
+  }
+  .project .plan-wrap .plan .calc-wrap .user .user-count {
+    font-size: 28px;
+  }
+  .project .plan-wrap .plan .calc-wrap .user .user-count::after {
+    font-size: 12px;
+    margin-left: 4px;
+  }
+  .project .plan-wrap .plan .calc-wrap .month-price .price-count {
+    font-size: 32px;
+  }
+  .project .plan-wrap .plan .calc-wrap .month-price .price-count::after {
+    margin-left: 4px;
+  }
+  .project .plan-wrap .plan .feat-wrap {
+    padding: 27px 0 35px 16px;
+    font-size: 14px;
+  }
+  .project .plan-wrap .plan .feat-wrap .feat::before {
+    width: 16px;
+    height: 14px;
+    margin-right: 16px;
+  }
 }
 /*# sourceMappingURL=all.css.map */
