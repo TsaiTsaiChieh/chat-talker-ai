@@ -318,6 +318,7 @@ ul {
   border-radius: 27px;
   background: #FFFFFF;
   color: #56C4C5;
+  cursor: pointer;
 }
 
 .btn-price:hover, .btn-price.active {
@@ -1294,6 +1295,7 @@ header img {
   font-size: 16px;
   padding: 8px 0 16px 32px;
   line-height: 2;
+  display: none;
 }
 
 .question .question-wrap.active .problem {
@@ -1307,6 +1309,7 @@ header img {
 
 .question .question-wrap.active .ans {
   color: #747474;
+  display: block;
 }
 
 @media (max-width: 768px) {
