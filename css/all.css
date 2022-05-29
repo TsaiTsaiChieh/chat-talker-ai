@@ -1271,6 +1271,10 @@ header img {
   position: relative;
 }
 
+.question .question-wrap:hover {
+  background: #f5fcfc;
+}
+
 .question .question-wrap .problem {
   font-size: 18px;
   padding: 16px 0 16px 32px;

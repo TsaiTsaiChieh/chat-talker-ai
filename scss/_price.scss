@@ -229,6 +229,9 @@
         text-align: left;
         border-radius: 12px;
         position: relative;
+        &:hover {
+            background: lighten($color-primary, 42%);
+        }
         .problem {
             font-size: $size-s;
             padding: 16px 0 16px 32px;
